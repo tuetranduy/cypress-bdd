@@ -1,0 +1,16 @@
+{
+    "html": {
+         "enabled": true,
+         "output": "html_report/report.html"
+   },
+     
+   "messages": {
+       "enabled": false
+     },
+      
+   "stepDefinitions": [
+     "cypress/e2e/[filepath]/**/*.{js,ts}",
+     "cypress/e2e/[filepath].{js,ts}",
+     "cypress/e2e/step_definitions/*.{js,ts}"
+   ]
+}
