@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "npx cypress open"
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "@cypress/schematic": "^2.5.0",
     "@cypress/xpath": "^2.0.3",
-    "cypress": "^12.9.0"
+    "cypress": "^12.9.0",
+    "lodash": "^4.17.21"
   }
 }

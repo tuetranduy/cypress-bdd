@@ -1,0 +1,10 @@
+{
+    "editor.formatOnSave": true,
+    "prettier.bracketSameLine": true,
+    "prettier.tabWidth": 4,
+    "cucumberautocomplete.steps": [
+        "cypress/e2e/features/*.feature",
+        "cypress/e2e/step_definitions/*.js"
+    ],
+    "cucumberautocomplete.strictGherkinCompletion": true
+}

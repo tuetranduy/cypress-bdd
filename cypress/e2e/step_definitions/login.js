@@ -1,9 +1,8 @@
 import { Given } from "@badeball/cypress-cucumber-preprocessor";
-import { LoginPage } from "../page_objects/loginPage";
+import { HomePage } from "../page_objects/homePage";
 
-const loginPage = new LoginPage();
+const homePage = new HomePage();
 
-Given("I log in with account {string}", (userEmail) => {
-    loginPage.login(userEmail);
+Given("I go to the Profile page", () => {
+    homePage.goToProfilePage();
 });
-    
