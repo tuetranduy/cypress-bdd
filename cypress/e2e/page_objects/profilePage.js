@@ -2,7 +2,8 @@ export class ProfilePage {
 
     elements = {
         editProfileButton: 'Edit profile',
-        usernameInput: '#user_username'
+        usernameInput: '#user_username',
+        updateAccountButton: 'input[value="Update account"]'
     }
 
     clickEditProfileButton() {
@@ -16,6 +17,10 @@ export class ProfilePage {
     fillUsernameInput(input) {
         cy.get(this.elements.usernameInput).clear();
         cy.get(this.elements.usernameInput).type(input)
+    }
+
+    clickUpdateAccountButton() {
+        cy.get(this.elements.updateAccountButton).click();
     }
 
 }

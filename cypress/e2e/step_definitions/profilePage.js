@@ -13,3 +13,11 @@ When("I edit the username field", () => {
         profilePage.fillUsernameInput(`${currentUsername.split("_")[0]}_${_.random(1, 999)}`)
     })
 });
+
+When("I click the Update Account button", () => {
+    profilePage.clickUpdateAccountButton();
+});
+
+When("My username is updated correctly", () => {
+    profilePage.clickUpdateAccountButton();
+});

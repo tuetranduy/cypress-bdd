@@ -16,7 +16,6 @@ Feature: Unsplash testing
     Given I go to the Profile page
     When I click Edit Profile button
     And I edit the username field
-# And I click the Update Account button
-# And I go to the Profile page again
-# Then I observe that it will take me to the Profile page
-# And My full name is displayed correctly
+    And I click the Update Account button
+    And I go to the Profile page again
+    And My username is updated correctly
