@@ -17,5 +17,12 @@ Feature: Unsplash testing
     When I click Edit Profile button
     And I edit the username field
     And I click the Update Account button
-    And I go to the Profile page again
     And My username is updated correctly
+
+# @Scenario3
+# Scenario: List of liked photos
+#   Given Clean up liked photo
+#   When I like 3 random photos
+#   And I go to Profile > Likes section
+#   And I see the number of likes is 3
+#   Then 3 photos appear in Likes section

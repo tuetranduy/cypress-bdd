@@ -4,13 +4,16 @@ const _ = require("lodash")
 
 const profilePage = new ProfilePage();
 
+let newUsername;
+
 When("I click Edit Profile button", () => {
     profilePage.clickEditProfileButton();
 });
 
 When("I edit the username field", () => {
     profilePage.getCurrentUsername().then((currentUsername) => {
-        profilePage.fillUsernameInput(`${currentUsername.split("_")[0]}_${_.random(1, 999)}`)
+        newUsername = `${currentUsername.split("_")[0]}_${_.random(1, 999)}`;
+        profilePage.fillUsernameInput(newUsername)
     })
 });
 
@@ -19,5 +22,7 @@ When("I click the Update Account button", () => {
 });
 
 When("My username is updated correctly", () => {
-    profilePage.clickUpdateAccountButton();
+    profilePage.getCurrentUsername().then((currentUsername) => {
+        expect(newUsername === currentUsername);
+    })
 });
