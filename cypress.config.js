@@ -22,6 +22,8 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/features/*.feature",
     supportFile: false,
     setupNodeEvents,
-    baseUrl: "https://unsplash.com/"
+    baseUrl: "https://unsplash.com/",
+    viewportHeight: 1080,
+    viewportWidth: 1920
   },
 });
